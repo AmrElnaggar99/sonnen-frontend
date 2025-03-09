@@ -1,0 +1,8 @@
+{
+  "printWidth": 120,
+  "tailwindStylesheet": "./app/globals.css",
+  "tailwindConfig": "./tailwind.config.ts",
+  "tailwindFunctions": ["clsx", "cn", "tw"],
+  "tailwindPreserveWhitespace": true,
+  "tailwindPreserveDuplicates": false
+}
