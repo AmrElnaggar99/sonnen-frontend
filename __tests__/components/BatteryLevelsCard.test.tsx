@@ -20,7 +20,7 @@ describe("BatteryLevelsCard", () => {
   it("updates cutoffTime when selecting different time ranges", () => {
     render(<BatteryLevelsCard />);
 
-    const now = DateTime.fromISO("2024-09-03T05:00:02.835Z").setZone(DateTime.local().zoneName);
+    const now = DateTime.fromISO("2024-09-03T06:01:02.835Z").setZone(DateTime.local().zoneName); // TODO: Change this to DateTime.now().startOf("second") when the actual API is available
 
     // Default is 24h
     expect(screen.getByTestId("battery-chart")).toHaveTextContent(now.minus({ hours: 24 }).toISO() as string);

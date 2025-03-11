@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 function BatteryLevelsCard() {
   const userTimeZone = DateTime.local().zoneName;
   const [timeRange, setTimeRange] = useState("24h");
-  const now = DateTime.fromISO("2024-09-03T05:00:02.835Z").setZone(userTimeZone); // TODO: Change this to DateTime.now() when the actual API is available
+  const now = DateTime.fromISO("2024-09-03T06:01:02.835Z").setZone(userTimeZone); // TODO: Change this to DateTime.now().startOf("second") when the actual API is available
   const cutoffTime = now.minus({
     hours: timeRange === "6h" ? 6 : timeRange === "12h" ? 12 : 24,
   });
