@@ -82,7 +82,7 @@ npm run dev # or yarn dev
 ### Handling Dates and Time
 
 - I would usually go for [Dayjs](https://www.npmjs.com/package/dayjs) because it's the most lightweight date formatting package.
-- But I noticed the dates in the JSON data includes `Z` which means `UTC` time, which in turn means we need to support different timezones.
+- But I noticed the dates in the JSON data include `Z` which means `UTC` time, which in turn means we need to support different timezones.
 - According to my experience, all date packages introduce bugs when working with timezones except [Luxon](https://www.npmjs.com/package/luxon).
 - Therefore, to offer timezone compatibility, Luxon is adopted in this project.
 
